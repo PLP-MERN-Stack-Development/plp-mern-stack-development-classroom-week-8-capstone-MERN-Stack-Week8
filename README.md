@@ -1,52 +1,104 @@
+# Copyright © 2024 Otigef. All rights reserved.
+
 # MERN Stack Capstone Project
 
-This assignment focuses on designing, developing, and deploying a comprehensive full-stack MERN application that showcases all the skills you've learned throughout the course.
+## 📹 Demo Video
 
-## Assignment Overview
+[![Watch the demo](https://img.youtube.com/vi/Dwl7BNTrsZI/0.jpg)](https://youtu.be/Dwl7BNTrsZI)
 
-You will:
-1. Plan and design a full-stack MERN application
-2. Develop a robust backend with MongoDB, Express.js, and Node.js
-3. Create an interactive frontend with React.js
-4. Implement testing across the entire application
-5. Deploy the application to production
+Or [click here to watch on YouTube](https://youtu.be/Dwl7BNTrsZI)
 
-## Getting Started
+---
 
-1. Accept the GitHub Classroom assignment
-2. Clone the repository to your local machine
-3. Follow the instructions in the `Week8-Assignment.md` file
-4. Plan, develop, and deploy your capstone project
+This is a full-stack MERN (MongoDB, Express.js, React, Node.js) application developed as a capstone project for the PLP MERN Stack Development course.
 
-## Files Included
+## 🚀 Project Overview
+This project demonstrates a complete MERN stack application with user authentication, protected routes, and document management. It is designed to showcase skills in backend and frontend development, API integration, and secure user management.
 
-- `Week8-Assignment.md`: Detailed assignment instructions
+## ✨ Features
+- User registration and login (JWT authentication)
+- Secure password hashing
+- Protected dashboard and routes
+- Document CRUD (Create, Read, Update, Delete)
+- Responsive React frontend
+- MongoDB Atlas or local MongoDB support
 
-## Requirements
+## 🗂️ Folder Structure
+```
+week-8-capstone_-Otigef/
+  backend/           # Express.js + MongoDB API
+    models/          # Mongoose models (User, Document)
+    routes/          # Express routes (auth, documents, users)
+    middleware/      # Custom middleware (auth)
+    public/          # Static files
+    app.js           # Main Express app
+    config.env       # Backend environment variables
+  frontend/          # React app
+    src/             # React source code
+      components/    # Reusable components
+      pages/         # App pages (Login, Signup, Dashboard, etc.)
+      context/       # React context (Auth)
+    index.html       # Main HTML file
+    package.json     # Frontend dependencies
+  .gitignore         # Files/folders to ignore in git
+  README.md          # Project documentation
+  demo/              # Demo videos and assets
+```
 
+## ⚙️ Setup Instructions
+
+### Prerequisites
 - Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
 - npm or yarn
-- Git and GitHub account
-- Accounts on deployment platforms (Render/Vercel/Netlify/etc.)
+- MongoDB Atlas account (or local MongoDB)
+- Git
 
-## Project Ideas
+### 1. Clone the repository
+```sh
+git clone https://github.com/PLP-MERN-Stack-Development/week-8-capstone_-Otigef.git
+cd week-8-capstone_-Otigef
+```
 
-The `Week8-Assignment.md` file includes several project ideas, but you're encouraged to develop your own idea that demonstrates your skills and interests.
+### 2. Backend Setup
+```sh
+cd backend
+npm install
+# Copy and edit config.env with your MongoDB URI and JWT secret
+cp config.env.example config.env
+npm start
+```
 
-## Submission
+### 3. Frontend Setup
+```sh
+cd ../frontend
+npm install
+npm run dev
+```
 
-Your project will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+### 4. Environment Variables
+Create a `backend/config.env` file with:
+```
+MONGO_URI=your-mongodb-uri
+JWT_SECRET=your-jwt-secret
+PORT=3000
+```
 
-1. Commit and push your code regularly
-2. Include comprehensive documentation
-3. Deploy your application and add the live URL to your README.md
-4. Create a video demonstration and include the link in your README.md
+## 🌐 Usage
+- Visit the frontend https://www-kenyamsaidizike-com.onrender.com
+- Register a new user
+- Login to access the dashboard
+- Manage documents
 
-## Resources
+## 🤝 Contributing
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -m 'Add feature'`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Open a Pull Request
 
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [Express.js Documentation](https://expressjs.com/)
-- [React Documentation](https://react.dev/)
-- [Node.js Documentation](https://nodejs.org/en/docs/)
-- [GitHub Classroom Guide](https://docs.github.com/en/education/manage-coursework-with-github-classroom) 
+## 📄 License
+This project is for educational purposes as part of the PLP MERN Stack Development course.
+
+---
+
+**Happy coding!** 
